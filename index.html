@@ -14,13 +14,33 @@
 <div class="container">
   <div class="jumbotron bg-dark text-white">
     <h1>Gif Searcher</h1>
-    
+    <h2>Filters</h2>
+    <div class="row">
+      <div id="filter-button-container" class="col-lg-12"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+          <h2>Add A New Filter</h2>
+        </div>
+        <div class="col-lg-12">  
+          <form class="form-inline">
+            <div class="form-group">
+              <input id="new-filter" class="form-control border-dark shadow-sm" type="text" placeholder="">
+            </div>
+            <button id="add-new-filter" type="submit" class="btn btn-light ml-2">New Filter</button>
+          </form>
+        </div>
+      </div>
   </div>
+
   <div class="row">
     <div class="col-lg-12">
-      
+      <h2 class="mb-3">Filtered Images</h2>
     </div>
   </div>
+
+  <div id="card-container" class="row"></div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
